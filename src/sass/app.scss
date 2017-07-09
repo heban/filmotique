@@ -2,8 +2,8 @@
 @import "../../node_modules/flexboxgrid/dist/flexboxgrid.min.css";
 
 // variables etc.
-@import "./utils/_variables.scss";
-@import "./utils/_wcag.scss";
+@import "./common/_variables.scss";
+@import "./common/_wcag.scss";
 
 // core styles
 @import "./core/_base.scss";

@@ -4204,6 +4204,10 @@ pseudomap@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/pseudomap/-/pseudomap-1.0.2.tgz#f052a28da70e618917ef0a8ac34c1ae5a68286b3"
 
+psub@^0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/psub/-/psub-0.13.0.tgz#512b77eaed90b3f861cc76a8e5faad5950bfa7af"
+
 public-encrypt@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/public-encrypt/-/public-encrypt-4.0.0.tgz#39f699f3a46560dd5ebacbca693caf7c65c18cc6"
