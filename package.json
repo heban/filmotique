@@ -1,9 +1,15 @@
 {
-  "name": "filmotique",
-  "version": "0.0.1",
-  "description": "Simple movie finder",
-  "main": "build/js/bundle.js",
-  "repository": "https://github.com/heban/filmotique.git",
-  "author": "heban <pawel.ochota@gmail.com>",
-  "license": "MIT"
+    "name": "filmotique",
+    "version": "0.0.1",
+    "description": "Simple movie finder",
+    "main": "build/js/bundle.js",
+    "repository": "https://github.com/heban/filmotique.git",
+    "author": "heban <pawel.ochota@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "eslint": "^4.2.0",
+        "eslint-plugin-jest": "^20.0.3",
+        "webpack": "^3.1.0",
+        "webpack-dev-server": "^2.5.1"
+    }
 }
