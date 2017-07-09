@@ -1,6 +1,8 @@
 const path = require("path");
 const webpack = require("webpack");
 const packageJson = require("./package.json");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackHarddiskPlugin = require("html-webpack-harddisk-plugin");
 const PATHS = {
     entryFile: path.resolve(__dirname, "./src/js/app.js"),
     bundleName: "js/bundle.js",
@@ -8,7 +10,20 @@ const PATHS = {
     publicPath: "./build/"
 };
 
-let plugins = [];
+let plugins = [
+    new HtmlWebpackPlugin({
+        template: "./src/index.ejs",
+        title: packageJson.name,
+        keywords: packageJson.keywords,
+        description: packageJson.description,
+        cache: false,
+        alwaysWriteToDisk: true
+    }),
+    new HtmlWebpackHarddiskPlugin({
+        outputPath: PATHS.publicPath
+    })
+];
+
 if (process.env.NODE_ENV === "production") {
     plugins.push(new webpack.optimize.UglifyJsPlugin());
 }

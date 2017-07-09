@@ -23,6 +23,8 @@
         "eslint": "^4.2.0",
         "eslint-loader": "^1.9.0",
         "eslint-plugin-jest": "^20.0.3",
+        "html-webpack-harddisk-plugin": "^0.1.0",
+        "html-webpack-plugin": "^2.29.0",
         "jest": "^20.0.4",
         "webpack": "^3.1.0",
         "webpack-dev-server": "^2.5.1"
