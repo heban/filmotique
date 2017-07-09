@@ -1,0 +1,57 @@
+.filmotique-form {
+    margin-top: 2rem;
+    transform: translateY(6rem);
+    will-change: transform;
+    transition: transform 0.4s ease-out;
+
+    &.filmotique-form--up {
+        transform: translateY(0);
+    }
+
+    input {
+        height: $search-height;
+        border-radius: 4px;
+        border: 1px solid gray;
+        font-size: $search-font-size;
+        width: 100%;
+        padding: 0 5rem 0 1rem;
+        text-overflow: ellipsis;
+    }
+
+    @keyframes loaderAnimation {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .filmotique-form-label {
+        position: relative;
+    }
+
+    .filmotique-loader,
+    .filmotique-loader:after {
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+    }
+    .filmotique-loader {
+        &.filmotique-loader--hidden {
+            display: none;
+        }
+
+        font-size: 1rem;
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        text-indent: -9999em;
+        border-top: 0.5rem solid $body-bg;
+        border-right: 0.5rem solid $body-bg;
+        border-bottom: 0.5rem solid $body-bg;
+        border-left: 0.5rem solid $header-bg;
+        transform: translateZ(0);
+        animation: loaderAnimation 1.1s infinite linear;
+    }
+}
