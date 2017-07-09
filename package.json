@@ -1,0 +1,9 @@
+{
+  "name": "filmotique",
+  "version": "0.0.1",
+  "description": "Simple movie finder",
+  "main": "build/js/bundle.js",
+  "repository": "https://github.com/heban/filmotique.git",
+  "author": "heban <pawel.ochota@gmail.com>",
+  "license": "MIT"
+}
