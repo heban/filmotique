@@ -10,4 +10,3 @@ test("prepareSearchRequestUrl should return correct url", () => {
 test("prepareSearchRequestUrl shouldn't return correct url when object is undefined", () => {
     expect(prepareSearchRequestUrl()).not.toEqual(correctUrl);
 });
-

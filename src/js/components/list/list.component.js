@@ -9,6 +9,7 @@ export default class ListComponent extends BaseComponent {
          * Listen to 'render/movies' event and rerender component
         */
         channel().subscribe("render/movies", (data) => {
+            console.log(data);
             this.render(data);
         });
     }
