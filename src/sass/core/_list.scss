@@ -28,5 +28,9 @@
             display: block;
             color: $movie-date-color;
         }
+
+        img {
+            max-width: 50%;
+        }
     }
 }
