@@ -2,14 +2,40 @@
     "name": "filmotique",
     "version": "0.0.1",
     "description": "Simple movie finder",
+    "keywords": "filmotique, film, films, movie, movies, es6, js, vanillajs",
     "main": "build/js/bundle.js",
     "repository": "https://github.com/heban/filmotique.git",
     "author": "heban <pawel.ochota@gmail.com>",
     "license": "MIT",
+    "engines": {
+        "node": ">=6.10"
+    },
+    "scripts": {
+        "dev": "webpack",
+        "production": "webpack -p",
+        "server": "webpack-dev-server --inline",
+        "test": "jest"
+    },
     "devDependencies": {
         "eslint": "^4.2.0",
         "eslint-plugin-jest": "^20.0.3",
         "webpack": "^3.1.0",
         "webpack-dev-server": "^2.5.1"
+    },
+    "babel": {
+        "presets": [
+            [
+                "env",
+                {
+                    "targets": {
+                        "browsers": [
+                            "last 2 versions",
+                            "ie >= 11",
+                            "Android >= 5"
+                        ]
+                    }
+                }
+            ]
+        ]
     }
 }
