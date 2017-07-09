@@ -18,4 +18,18 @@ body {
 .filmotique {
     width: 100%;
     height: 100%;
+
+    .filmotique-base {
+        width: 100%;
+        height: 100%;
+        padding-top: $header-height;
+    }
+
+    .filmotique-header {
+        background: $header-bg;
+    }
+
+    main {
+        padding: 0 .5rem;
+    }
 }

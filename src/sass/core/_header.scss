@@ -1,0 +1,25 @@
+.filmotique-header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: $header-height;
+    background: $header-bg;
+    text-align: center;
+    padding: 1.1rem 0;
+
+    a {
+        color: $header-title-color;
+        text-decoration: none;
+        font-size: $header-title-size;
+        font-style: italic;
+
+        &:link,
+        &:active,
+        &:hover,
+        &:visited {
+            color: $header-title-color;
+            text-decoration: none;
+        }
+    }
+}
