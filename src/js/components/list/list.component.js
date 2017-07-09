@@ -5,6 +5,9 @@ export default class ListComponent extends BaseComponent {
     constructor(options) {
         super(options);
 
+        /*
+         * Listen to 'render/movies' event and rerender component
+        */
         channel().subscribe("render/movies", (data) => {
             this.render(data);
         });
